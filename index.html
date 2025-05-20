@@ -1,67 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunmo Electric Supply Inc.</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
       color: #333;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
+      background: url('https://images.unsplash.com/photo-1563068261-13ebbdf16aa3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0') no-repeat center center/cover;
+      padding: 100px 20px;
       text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 10px;
+    }
+    nav {
+      background-color: #003366;
+      text-align: center;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      padding: 70px 20px;
+      text-align: center;
     }
-    h1, h2 {
+    h2 {
       color: #003366;
+      margin-bottom: 20px;
     }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
       margin-top: 30px;
     }
+    .gallery img {
+      width: 320px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .contact-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
     footer {
-      background-color: #003366;
+      background: #002244;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 25px;
+    }
+    a {
+      color: #003366;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
-  </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+<header>
+  <h1>Sunmo Electric Supply Inc.</h1>
+  <p>Powering Progress – Sherman Oaks, California</p>
+</header>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
-    </div>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#location">Location</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
-  </footer>
+<section id="about">
+  <h2>About Us</h2>
+  <p>Sunmo Electric Supply Inc. is a California-based electrical supply company. We specialize in sourcing and delivering reliable power components to businesses and industries across the U.S.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p>We offer bulk electrical supply, delivery logistics, energy consulting, and component matching for industrial and residential needs.</p>
+</section>
+
+<section id="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1563068261-13ebbdf16aa3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="gallery1">
+    <img src="https://images.unsplash.com/photo-1635958849793-9b766715d1f5?q=80&w=2239&auto=format&fit=crop&ixlib=rb-4.1.0" alt="gallery2">
+    <img src="https://images.unsplash.com/photo-1544262947-13a6c4d268e7?q=80&w=2741&auto=format&fit=crop&ixlib=rb-4.1.0" alt="gallery3">
+  </div>
+</section>
+
+<section id="location">
+  <h2>Location</h2>
+  <p>We are located at <strong>4846 Van Nuys Blvd, Sherman Oaks, CA 91403</strong> and proudly serve both local and national clients.</p>
+</section>
+
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <div class="contact-box">
+    <p><strong>Email:</strong> <a href="mailto:koshki@sunmoelectricsupplyinc.shop">koshki@sunmoelectricsupplyinc.shop</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+17276995937">727-699-5937</a></p>
+    <p><strong>City:</strong> Sherman Oaks, CA</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sunmo Electric Supply Inc. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
